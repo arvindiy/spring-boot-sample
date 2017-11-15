@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HolaRestController {
 
 	@RequestMapping(method = RequestMethod.GET, value = "/hola", produces = "text/plain")
-	public String hold() throws UnknownHostException {
+	public String hola() throws UnknownHostException {
 		String hostName = null;
 		try {
 			hostName = InetAddress.getLocalHost().getHostAddress();
